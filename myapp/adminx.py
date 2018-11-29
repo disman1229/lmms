@@ -37,7 +37,6 @@ xadmin.site.register(overTime,overTimeAdmin)
 #     # 主题修改
 #     enable_themes = False
 #     use_bootswatch = False
-#
 
 #整体配置
 class GlobalSettings(object):

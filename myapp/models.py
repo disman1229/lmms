@@ -96,23 +96,8 @@ class overTime(models.Model):
         verbose_name_plural = verbose_name
 
     def duration(self):
-        # 计算时长1
-        # ehour = self.endTime.hour
-        # eminute = self.endTime.minute
-        # shour = self.startTime.hour
-        # sminute = self.startTime.minute
-        # chour = ehour - shour
-        # cminute = eminute - sminute
 
-        # 计算时长2
-        # print(self.endTime)
-        # endtime = time.mktime(self.endTime.timetuple())
-        # starttime = time.mktime(self.startTime.timetuple())
-        # print(endtime)
-        # dtime = endtime - starttime
-        # ctime = datetime.datetime.fromtimestamp(dtime)
-
-        # 计算时长3
+        # 计算时长
         sTime = str(self.startTime)
         eTime = str(self.endTime)
         def t2s(t):
@@ -123,8 +108,5 @@ class overTime(models.Model):
         cTime = e1Time - s1Time
         print(cTime)
         dTime = time.strftime("%H:%M:%S", time.gmtime(cTime))
-        # print(c1Time)
-
-
         return dTime
     duration.short_description = "加班时长"
