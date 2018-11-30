@@ -1,0 +1,779 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Nov 30 17:53:43 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 06 November 2018 07:16:00
+os: Linux-3.10.0-862.14.4.el7.x86_64 #1 SMP Wed Sep 26 15:12:11 UTC 2018
+nodename: disman
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/www/lmms
+writing pidfile to uwsgi.pid
+detected binary path: /root/miniconda3/envs/lmms/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/www/lmms
+your processes number limit is 7271
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7001).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Nov 30 17:54:40 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 06 November 2018 07:16:00
+os: Linux-3.10.0-862.14.4.el7.x86_64 #1 SMP Wed Sep 26 15:12:11 UTC 2018
+nodename: disman
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/www/lmms
+writing pidfile to uwsgi.pid
+detected binary path: /root/miniconda3/envs/lmms/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/www/lmms
+your processes number limit is 7271
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:7001).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Nov 30 18:04:35 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 06 November 2018 07:16:00
+os: Linux-3.10.0-862.14.4.el7.x86_64 #1 SMP Wed Sep 26 15:12:11 UTC 2018
+nodename: disman
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/www/lmms
+writing pidfile to uwsgi.pid
+detected binary path: /root/miniconda3/envs/lmms/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/www/lmms
+your processes number limit is 7271
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:7001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 |Anaconda, Inc.| (default, Oct  9 2018, 12:34:16)  [GCC 7.3.0]
+Python main interpreter initialized at 0x87d510
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 312864 bytes (305 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x87d510 pid: 3467 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3467)
+spawned uWSGI worker 1 (pid: 3617, cores: 4)
+spawned uWSGI worker 2 (pid: 3618, cores: 4)
+Not Found: /favicon.ico
+[pid: 3617|app: 0|req: 1/1] 111.2.98.222 () {46 vars in 865 bytes} [Fri Nov 30 18:04:46 2018] GET /favicon.ico => generated 1975 bytes in 312 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[pid: 3617|app: 0|req: 2/2] 111.2.98.222 () {48 vars in 920 bytes} [Fri Nov 30 18:04:49 2018] GET /xadmin/ => generated 242399 bytes in 624 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 3)
+Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[pid: 3617|app: 0|req: 3/3] 111.2.98.222 () {48 vars in 920 bytes} [Fri Nov 30 18:04:53 2018] GET /xadmin/ => generated 242399 bytes in 322 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[pid: 3617|app: 0|req: 4/4] 111.2.98.222 () {48 vars in 920 bytes} [Fri Nov 30 18:07:29 2018] GET /xadmin/ => generated 242399 bytes in 354 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 2)
+Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[pid: 3617|app: 0|req: 5/5] 111.2.98.222 () {48 vars in 920 bytes} [Fri Nov 30 18:07:32 2018] GET /xadmin/ => generated 242389 bytes in 367 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[pid: 3617|app: 0|req: 6/6] 111.2.98.222 () {50 vars in 942 bytes} [Fri Nov 30 18:07:47 2018] GET /xadmin/ => generated 242525 bytes in 309 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 3)
+Not Found: /favicon.ico
+[pid: 3617|app: 0|req: 7/7] 111.2.98.222 () {50 vars in 918 bytes} [Fri Nov 30 18:07:49 2018] GET /favicon.ico => generated 1975 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /
+[pid: 3617|app: 0|req: 8/8] 111.2.98.222 () {46 vars in 875 bytes} [Fri Nov 30 18:07:52 2018] GET / => generated 1924 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[pid: 3617|app: 0|req: 9/9] 111.2.98.222 () {46 vars in 889 bytes} [Fri Nov 30 18:07:58 2018] GET /xadmin/ => generated 242264 bytes in 312 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/root/miniconda3/envs/lmms/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+[pid: 3617|app: 0|req: 10/10] 111.2.98.222 () {48 vars in 920 bytes} [Fri Nov 30 18:09:06 2018] GET /xadmin/ => generated 242397 bytes in 368 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 3)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 3617)...
+Gracefully killing worker 2 (pid: 3618)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/www/lmms
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:7001)
+running /root/miniconda3/envs/lmms/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Nov 30 18:11:10 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 06 November 2018 07:16:00
+os: Linux-3.10.0-862.14.4.el7.x86_64 #1 SMP Wed Sep 26 15:12:11 UTC 2018
+nodename: disman
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /data/www/lmms
+detected binary path: /root/miniconda3/envs/lmms/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/www/lmms
+your processes number limit is 7271
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:7001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 |Anaconda, Inc.| (default, Oct  9 2018, 12:34:16)  [GCC 7.3.0]
+Python main interpreter initialized at 0x14e6f50
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 312864 bytes (305 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x14e6f50 pid: 3467 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 3467)
+spawned uWSGI worker 1 (pid: 10012, cores: 4)
+spawned uWSGI worker 2 (pid: 10013, cores: 4)
+[pid: 10013|app: 0|req: 1/1] 111.2.98.222 () {48 vars in 920 bytes} [Fri Nov 30 18:11:18 2018] GET /xadmin/ => generated 10386 bytes in 666 msecs (HTTP/1.1 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 10013|app: 0|req: 2/2] 111.2.98.222 () {46 vars in 835 bytes} [Fri Nov 30 18:11:19 2018] GET /xadmin/jsi18n/ => generated 7684 bytes in 71 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 1)
+[pid: 10013|app: 0|req: 3/3] 111.2.98.222 () {48 vars in 960 bytes} [Fri Nov 30 18:11:20 2018] GET /xadmin/myapp/vmms/ => generated 190856 bytes in 529 msecs (HTTP/1.1 200) 8 headers in 542 bytes (1 switches on core 2)
+[pid: 10013|app: 0|req: 4/4] 111.2.98.222 () {46 vars in 846 bytes} [Fri Nov 30 18:11:21 2018] GET /xadmin/jsi18n/ => generated 7684 bytes in 34 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 3)
+[pid: 10013|app: 0|req: 5/5] 111.2.98.222 () {48 vars in 979 bytes} [Fri Nov 30 18:12:31 2018] GET /xadmin/myapp/vmms/add/ => generated 18321 bytes in 400 msecs (HTTP/1.1 200) 7 headers in 396 bytes (1 switches on core 0)
+[pid: 10013|app: 0|req: 6/6] 111.2.98.222 () {46 vars in 850 bytes} [Fri Nov 30 18:12:32 2018] GET /xadmin/jsi18n/ => generated 7684 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 1)
+[pid: 10013|app: 0|req: 7/7] 111.2.98.222 () {48 vars in 960 bytes} [Fri Nov 30 18:12:42 2018] GET /xadmin/myapp/vmms/ => generated 190856 bytes in 386 msecs (HTTP/1.1 200) 8 headers in 542 bytes (1 switches on core 2)
+[pid: 10013|app: 0|req: 8/8] 111.2.98.222 () {48 vars in 978 bytes} [Fri Nov 30 18:13:16 2018] GET /xadmin/myapp/vmms/?p=1 => generated 57598 bytes in 124 msecs (HTTP/1.1 200) 8 headers in 541 bytes (1 switches on core 3)
+[pid: 10013|app: 0|req: 9/9] 111.2.98.222 () {46 vars in 850 bytes} [Fri Nov 30 18:13:16 2018] GET /xadmin/jsi18n/ => generated 7684 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 10013|app: 0|req: 10/10] 111.2.98.222 () {48 vars in 1010 bytes} [Fri Nov 30 18:19:15 2018] GET /xadmin/myapp/vmms/?p=1&o=-sampleDate => generated 60293 bytes in 144 msecs (HTTP/1.1 200) 8 headers in 541 bytes (1 switches on core 1)
+[pid: 10013|app: 0|req: 11/11] 111.2.98.222 () {46 vars in 864 bytes} [Fri Nov 30 18:19:16 2018] GET /xadmin/jsi18n/ => generated 7684 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 2)
+[pid: 10013|app: 0|req: 12/12] 111.2.98.222 () {48 vars in 1024 bytes} [Fri Nov 30 18:19:24 2018] GET /xadmin/myapp/vmms/?p=0&o=-sampleDate => generated 194318 bytes in 357 msecs (HTTP/1.1 200) 8 headers in 542 bytes (1 switches on core 3)
+[pid: 10013|app: 0|req: 13/13] 111.2.98.222 () {46 vars in 864 bytes} [Fri Nov 30 18:19:24 2018] GET /xadmin/jsi18n/ => generated 7684 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+Not Found: /
+[pid: 10013|app: 0|req: 14/14] 122.14.218.149 () {44 vars in 578 bytes} [Fri Nov 30 18:19:36 2018] GET / => generated 1919 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
