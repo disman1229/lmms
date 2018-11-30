@@ -10,15 +10,15 @@ from django.contrib.auth.models import User
 # 车辆管理
 class VmmsAdmin(object):
     # 数据展示及顺序
-    list_display = ('carModel','engineDisplacement','gearBox', 'VIN','engineNumber', 'mileage', 'recipient', 'sampleDate', 'returnDate','useTest','testProgress', 'transport', 'parkingLocation', 'remarks')
+    list_display = ('carModel','engineDisplacement','gearBox', 'VIN','engineNumber', 'mileage', 'recipient', 'sampleDate', 'returnDate','useTest','parkingLocation','transport', 'testProgress', 'remarks',)
     # 搜索数据
     search_fields =('carModel','VIN')
     # 数据筛选
     list_filter =('sampleDate', 'returnDate','testProgress',)
     # 数据及时编辑
-    list_editable =('returnDate')
+    list_editable =('returnDate','parkingLocation','transport','testProgress',)
     # 显示数据详细
-    show_detail_fields =('returnDate')
+    # show_detail_fields =('carModel')
     # 不可修改的数据
     # readonly_fields =('VIN')
 

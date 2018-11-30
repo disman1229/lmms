@@ -19,37 +19,29 @@ class Vmms(models.Model):
     #接样人
     recipient = models.CharField(max_length=5,verbose_name="接车人")
     # 接车时间
-    sampleDate = models.DateTimeField(verbose_name="接车时间")
+    sampleDate = models.DateField(verbose_name="接车时间")
     # 还车时间
-    returnDate = models.DateTimeField(verbose_name="还车时间",blank=True)
+    returnDate = models.DateField(verbose_name="还车时间",blank=True)
     # 试验用途
-    useTests = (
-        (0, "请选择试验用途"),
-        (1, "排放油耗试验"),
-        (2, "温度场试验"),
-        (3, "冷却试验"),
-        (4, "空调试验"),
-    )
-    useTest = models.IntegerField(choices=useTests, default=0, verbose_name="试验用途")
-    # 试验进度
-    testProgresss = (
-        (0, "进行中"),
-        (1, "完成"),
-    )
-    testProgress = models.IntegerField(choices=testProgresss, default=0, verbose_name="试验进度")
-    # 运输
-    transports = (
-        (0,"不可拖运"),
-        (1, "可拖回")
-    )
-    transport = models.IntegerField(choices=transports,default=0,verbose_name="是否可运输")
+    useTest = models.CharField(max_length=100, verbose_name="试验用途")
     #车辆停放位置
     parkingLocations = (
         (0, "试验室"),
         (1, "停车场"),
     )
     parkingLocation = models.IntegerField(choices=parkingLocations,default=0,verbose_name="停放地")
-
+    # 运输
+    transports = (
+        (0, "不可拖运"),
+        (1, "可拖回")
+    )
+    transport = models.IntegerField(choices=transports, default=0, verbose_name="是否可运输")
+    # 试验进度
+    testProgresss = (
+        (0, "进行中"),
+        (1, "已拖回"),
+    )
+    testProgress = models.IntegerField(choices=testProgresss, default=0, verbose_name="试验进度")
     # 备注
     remarks = models.TextField(verbose_name="备注",blank=True)
 
@@ -61,21 +53,6 @@ class Vmms(models.Model):
     # 列表显示名称
     def __str__(self):
         return self.carModel
-
-    # ordering = ('-sampleDate')排序方式
-
-    #
-    def testProgresss(self):
-       if self.testProgress == 0:
-           color_code = 'green'
-       else:
-           color_code = 'red'
-       return format_html(
-           '<span style="color: #{};">{} {}</span>',
-           color_code,
-           self.testProgress
-       )
-
 
 # 加班统计模型
 class overTime(models.Model):
