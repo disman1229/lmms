@@ -2,4 +2,5 @@
 uwsgi.ini
 uwsgi.log
 uwsgi.pid
-/static
+**/admin
+**/xadmin
