@@ -10,7 +10,7 @@ from django.contrib.auth.models import User
 # 车辆管理
 class VmmsAdmin(object):
     # 数据展示及顺序
-    list_display = ('carModel','engineDisplacement','gearBox', 'VIN','engineNumber', 'mileage', 'recipient', 'sampleDate', 'returnDate','useTest','parkingLocation','transport', 'testProgress', 'remarks',)
+    list_display = ('carModel', 'VIN','engineNumber', 'recipient', 'sampleDate', 'returnDate','useTest','parkingLocation','transport', 'testProgress', 'remarks',)
     # 搜索数据
     search_fields =('carModel','VIN')
     # 数据筛选

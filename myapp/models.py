@@ -44,12 +44,10 @@ class Vmms(models.Model):
     testProgress = models.IntegerField(choices=testProgresss, default=0, verbose_name="试验进度")
     # 备注
     remarks = models.TextField(verbose_name="备注",blank=True)
-
     class Meta:
         db_table = 'vmms'
         verbose_name = "车辆管理"
         verbose_name_plural = verbose_name
-
     # 列表显示名称
     def __str__(self):
         return self.carModel
@@ -63,7 +61,7 @@ class overTime(models.Model):
     #结束时间
     endTime = models.TimeField(verbose_name="结束时间")
     # 加班时长
-    # causeTime = models.IntegerField('causeTime1')
+#    causeTime = models.IntegerField('')
     #加班事由（选填）
     overTimeCause = models.CharField(max_length=255,verbose_name="加班事由")
 
@@ -87,3 +85,13 @@ class overTime(models.Model):
         dTime = time.strftime("%H:%M:%S", time.gmtime(cTime))
         return dTime
     duration.short_description = "加班时长"
+
+#测试数据库
+class test(models.Model):
+	name = models.CharField(max_length=100,verbose_name="测试名称")
+	age = models.IntegerField()
+
+#	class Meta:
+#        db_table = 'test'
+#        verbose_name = "测试"
+#        verbose_name_plural = verbose_name
